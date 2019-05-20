@@ -49,11 +49,12 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history)
+plugins=(go docker docker-compose git history stap autojump)
 
 # User configuration
+export PATH=/home/cjling/proj/openresty-systemtap-toolkit:/home/cjling/proj/FlameGraph:/usr/local/opt/python/libexec/bin:$HOME/bin:/usr/local/bin:$PATH
+export GOPATH=/home/cjling/proj/go/usual
 
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
