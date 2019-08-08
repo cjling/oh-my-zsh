@@ -8,13 +8,17 @@ prompt_context() {
   fi
 }
 
-
 build_prompt() {
   prompt_context
 }
 
-PROMPT='%{$fg_bold[red]%}┌-_-# %{$fg_bold[green]%}%p$(build_prompt) %{$fg[cyan]%}%d%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}
-%{$fg_bold[red]%}└>% %{$reset_color%}'
+# cur samples
+# orig    mod:
+#  ┌      ╭   ╭   ╒
+#  └>     ╰>  ╰>  ╘>
+
+PROMPT='%{$fg_bold[red]%}╭-_-# %{$fg_bold[green]%}%p$(build_prompt) %{$fg[cyan]%}%d%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}
+%{$fg_bold[red]%}╰>% %{$reset_color%}'
 
 # PROMPT='%{$fg_bold[red]%}┌-_-# %{$fg_bold[green]%}%p%{$fg[cyan]%}%d%{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%}
 # %{$fg_bold[red]%}└>% %{$reset_color%}'
