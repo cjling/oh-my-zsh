@@ -11,6 +11,7 @@ alias tn='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
+alias tkw='tmux kill-window -t'
 
 # CONFIGURATION VARIABLES
 # Automatically start tmux
